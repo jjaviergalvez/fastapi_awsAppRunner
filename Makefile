@@ -20,4 +20,7 @@ killweb:
 lint:
 	pylint --disable=R,C main.py
 
+streamlit:
+	streamlit run app.py --server.port=8080
+
 all: install lint test
